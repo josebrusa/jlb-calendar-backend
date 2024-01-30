@@ -7,7 +7,7 @@ const EventoSchema = Schema({
         required: true
     },
     notes: {
-        type: String,        
+        type: String,
     },
     start: {
         type: Date,
