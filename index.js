@@ -11,14 +11,7 @@ dbConnection();
 
 // CORS
 app.use(cors())
-// Habilitar CORS para todas las rutas
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://candelary-app-vite.vercel.app');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    next();
-  });
+
 
 // Directorio Público
 app.use( express.static('public') );
